@@ -1,3 +1,5 @@
+package entity;
+
 public class Card {
     private String cardType;
     private String cardNumber;
@@ -15,6 +17,10 @@ public class Card {
         this.cardType = cardType;
         this.cardNumber = cardNumber;
         this.moneyCount = moneyCount;
+    }
+
+
+    public Card(Person person) {
     }
 
     public String getCardType() {
@@ -52,10 +58,10 @@ public class Card {
     @Override
     public String toString() {
         return "Card{" +
-                "cardType= '" + cardType + '\'' +
-                ", cardNumber= '" + cardNumber + '\'' +
-                ", person= " + person.getFirstName() + " " + person.getLastName() +
-                ", moneyCount= " + moneyCount +
+                "cardType='" + cardType + '\'' +
+                ", cardNumber='" + cardNumber + '\'' +
+                ", person=" + person.getFirstName() + " " + person.getLastName() +
+                ", moneyCount=" + moneyCount +
                 '}';
     }
 }
